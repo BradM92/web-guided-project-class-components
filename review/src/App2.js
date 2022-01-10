@@ -13,6 +13,9 @@ class App2 extends React.Component {
         return(<div>
             <h1>Hello {this.state.name}.</h1>
             <p>Your age is {this.state.age}.</p>
+            <button onClick={()=> {
+                console.log("here");
+            }}>Change the name to Allison.</button>
         </div>)
     }
 }
