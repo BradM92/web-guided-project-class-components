@@ -1,11 +1,16 @@
 import React from 'react';
 
-const Person = (props) => {
-    return(<div>
-        <h1>Hello {props.name}.</h1>
-        <p>Your age is {props.age}.</p>
-    </div>);
+// const Person = (props) => {
+//     return(<div>
+//         <h1>Hello {props.name}.</h1>
+//         <p>Your age is {props.age}.</p>
+//     </div>);
+// }
+
+class Person extends React.Component {
+    
 }
+
 
 class App2 extends React.Component {
     constructor() {
