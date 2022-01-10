@@ -81,7 +81,7 @@ class App extends React.Component {
   }
 
   //Toggle Purchased
-  handleToggleItem = (item) => {
+  handleToggleItem = (selectedItem) => {
     //1. Capture our click
     //2. change our state
     //3. retain previous state
@@ -90,10 +90,10 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries: this.state.groceries.map(item => {
-        if(item.id === 1246) {
+        if(item.id === selectedItem.id) {
           return({
             ...item,
-            purchased: true
+            purchased: !item.purchased
           })
         } else {
           return item;
