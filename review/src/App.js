@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const Person = (props) => {
   return(<div>
-    <h1>Hello {state.name}.</h1>
-    <p>It's so good to met you {state.name}</p>
-    <p>You are {state.age} years old.</p>
+    <h1>Hello {props.name}.</h1>
+    <p>It's so good to met you {props.name}</p>
+    <p>You are {props.age} years old.</p>
   </div>);
 }
 
@@ -17,7 +17,8 @@ const App = () => {
   const handleClick = () => {
     setState({
       ...state,
-      name:"Allison"
+      name:"Allison",
+      age: 11
     });
   }
 
