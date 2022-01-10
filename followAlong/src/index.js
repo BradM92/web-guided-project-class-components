@@ -34,7 +34,7 @@ const groceries = [
   {
     name: 'Granola',
     id: 1248,
-    purchased: false
+    purchased: true
   }
 ];
 
@@ -46,6 +46,7 @@ class App extends React.Component {
     };
   }
 
+  
 
   // Class methods to update state
   render() {
