@@ -9,6 +9,7 @@ class ListForm extends React.Component {
 
   // class property to submit form
   handleSubmit = e => {
+    e.preventDefault();
     console.log("ListForm: clicking");
   }
 
