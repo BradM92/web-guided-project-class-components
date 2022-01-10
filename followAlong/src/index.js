@@ -54,7 +54,7 @@ class App extends React.Component {
     //4. change groceries: remove all items where purchased == true
 
     const newGroceries = this.state.groceries.filter(item => {
-        return item.id > 200;
+        return item.purchased === false;
     });
 
     this.setState({
