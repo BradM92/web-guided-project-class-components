@@ -48,7 +48,14 @@ class App extends React.Component {
 
   //Toggle Clear Purchased
   handleClearPurchased = ()=> {
-    console.log("Do the thing I want you to do.");
+    //1. Capture our click
+    //2. Change our state setState
+    //3. Retain our previous state.
+    //4. change groceries: remove all items where purchased == true
+    this.setState({
+      ...this.state,
+      groceries: 
+    });
   }
 
   //Add Item
