@@ -21,7 +21,7 @@ class GroceryList extends React.Component {
       <div className="shopping-list">
          {
           this.props.groceries.map(item => (
-            <Item handleToggleItem={props.handleToggleItem} key={item.id} item={item} />
+            <Item handleToggleItem={this.props.handleToggleItem} key={item.id} item={item} />
          ))}
        </div>
     )
