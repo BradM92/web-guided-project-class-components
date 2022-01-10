@@ -66,10 +66,10 @@ class App extends React.Component {
     //1. Capture our click
     //2. change our state
     //3. retain previous state
-    //4. add to groceries an new groceries
+    //4. change groceries: add to groceries an new groceries
     this.setState({
       ...this.state,
-      groceries: 
+      groceries: [...this.state.groceries]
     });
   }
 
