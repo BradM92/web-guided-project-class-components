@@ -4,4 +4,4 @@ class App2 extends React.Component {
 
 }
 
-export App2;
+export default App2;
