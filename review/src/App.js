@@ -6,16 +6,18 @@ const App = () => {
     age: 33
   });
 
+  const handleClick = () => {
+    setState({
+      ...state,
+      name:"Allison"
+    });
+  }
+
   return (
     <div>
       <h1>Hello {state.name}.</h1>
       <p>You are {state.age} years old.</p>
-      <button onClick={()=> {
-        setState({
-          ...state,
-          name:"Chris"
-        });
-      }}>Change your name to Allison.</button>
+      <button onClick={handleClick}>Change your name to Allison.</button>
     </div>
   );
 };
