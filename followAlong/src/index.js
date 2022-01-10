@@ -62,14 +62,14 @@ class App extends React.Component {
   }
 
   //Add Item
-  handleAddItem = ()=> {
+  handleAddItem = (itemName)=> {
     //1. Capture our click
     //2. change our state
     //3. retain previous state
     //4. change groceries: add to groceries an new groceries
 
     const newItem = {
-      name:"Chips",
+      name:itemName,
       id: Date.now(),
       purchased: false
     };
