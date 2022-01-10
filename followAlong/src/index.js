@@ -101,7 +101,6 @@ class App extends React.Component {
         
       })
     });
-
   }
 
   // Class methods to update state
