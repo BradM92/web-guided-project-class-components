@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Person = () => {
+const Person = (props) => {
   return(<div>
     <h1>Hello {state.name}.</h1>
     <p>It's so good to met you {state.name}</p>
@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <div>
-      <Person />
+      <Person name={state.name} age={state.age}/>
       <button onClick={handleClick}>Change your name to Allison.</button>
     </div>
   );
