@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 class App2 extends React.Component {
     constructor() {
         super();
@@ -18,8 +20,7 @@ class App2 extends React.Component {
 
     render() {
         return(<div>
-            <h1>Hello {this.state.name}.</h1>
-            <p>Your age is {this.state.age}.</p>
+            <Person name={this.state.name} age={this.state.age}/>
             <button onClick={this.handleClick}>Change the name to Allison.</button>
         </div>)
     }
