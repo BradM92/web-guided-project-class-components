@@ -62,6 +62,16 @@ class App extends React.Component {
   }
 
   //Add Item
+  handleAddItem = ()=> {
+    //1. Capture our click
+    //2. change our state
+    //3. retain previous state
+    //4. add to groceries an new groceries
+    this.setState({
+      ...this.state,
+      groceries: 
+    });
+  }
 
   //Toggle Purchased
 
