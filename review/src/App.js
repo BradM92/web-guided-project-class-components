@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [name, setState] = useState("Warren");
+  const [name, setName] = useState("Warren");
+  const [age, setAge ] = useState(33);
 
   return (
     <div>
