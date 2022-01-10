@@ -1,6 +1,11 @@
 import React from 'react';
 
-
+const Person = () => {
+    return(<div>
+        <h1>Hello {this.state.name}.</h1>
+        <p>Your age is {this.state.age}.</p>
+    </div>);
+}
 
 class App2 extends React.Component {
     constructor() {
