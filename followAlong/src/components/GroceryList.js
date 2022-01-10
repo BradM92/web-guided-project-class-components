@@ -5,7 +5,6 @@ import Item from "./Item";
 const GroceryList = props => {
   // for sorting the list based on whether an item has been purchased or not
   // const sortedList = props.groceries.sort((a, b) => a.purchased - b.purchased);
-  console.log(props.groceries);
   return (
     <div className="shopping-list">
       {props.groceries.map(item => (

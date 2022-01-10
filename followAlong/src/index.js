@@ -46,7 +46,11 @@ class App extends React.Component {
     };
   }
 
-  
+  //Toggle Clear Purchased
+
+  //Add Item
+
+  //Toggle Purchased
 
   // Class methods to update state
   render() {
