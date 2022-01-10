@@ -8,13 +8,12 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hello {state.name}</h1>
+      <h1>Hello {state.name}.</h1>
       <p>You are {state.age} years old.</p>
       <button onClick={()=> {
-        console.log("here");
         setState({
           ...state,
-          name:"Allison"
+          name:"Chris"
         });
       }}>Change your name to Allison.</button>
     </div>
