@@ -1,11 +1,11 @@
 import React from "react";
 
 const App = () => {
-  const name = "Warren";
-  
+  const name = "Allison";
+
   return (
     <div>
-      <h1>Hello Chris</h1>
+      <h1>Hello {name}</h1>
       <p>You are 33 years old.</p>
     </div>
   );
