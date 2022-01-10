@@ -90,11 +90,14 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries: this.state.groceries.map(item => {
-        return({
-          name:"gotcha!!",
-          id:2,
-          purchased:false
-        });
+        console.log(item);
+        if(item.id === 1248) {
+          return({
+            ...item,
+            name: "New thing"
+          })
+        }
+        
       })
     });
 
