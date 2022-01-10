@@ -82,7 +82,16 @@ class App extends React.Component {
 
   //Toggle Purchased
   handleToggleItem = (item) => {
-    
+    //1. Capture our click
+    //2. change our state
+    //3. retain previous state
+    //4. change groceries: find the item we clicked toggle purchased
+
+    this.setState({
+      ...this.state,
+      groceries
+    });
+
   }
 
   // Class methods to update state
