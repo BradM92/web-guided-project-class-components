@@ -9,8 +9,6 @@ class App2 extends React.Component {
         }
     }
 
-    console.log("here");
-
     render() {
         return(<div>
             <h1>Hello {this.state.name}.</h1>
