@@ -13,6 +13,7 @@ const App = () => {
       <button onClick={()=> {
         console.log("here");
         setState({
+          ...state,
           name:"Allison"
         });
       }}>Change your name to Allison.</button>
