@@ -12,6 +12,9 @@ const App = () => {
       <p>You are {state.age} years old.</p>
       <button onClick={()=> {
         console.log("here");
+        setState({
+          name:"Allison"
+        });
       }}>Change your name to Allison.</button>
     </div>
   );
