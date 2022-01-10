@@ -9,7 +9,7 @@ const groceries = [
   {
     name: 'Bananas',
     id: 123,
-    purchased: true
+    purchased: false
   },
   {
     name: 'Torillas',
@@ -34,7 +34,7 @@ const groceries = [
   {
     name: 'Granola',
     id: 1248,
-    purchased: true
+    purchased: false
   }
 ];
 
