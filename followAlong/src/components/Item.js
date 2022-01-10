@@ -2,7 +2,7 @@ import React from 'react';
 
 const Item = props => {
   const handleClick = () => {
-
+    console.log('clicking ', props.item.name);
   }
 
   return (
