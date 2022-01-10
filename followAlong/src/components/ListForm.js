@@ -10,6 +10,10 @@ class ListForm extends React.Component {
 
   handleChanges = e => {
     // update state with each keystroke
+    this.setState({
+      ...this.state,
+      input: e.target.value
+    });
   };
 
   // class property to submit form
@@ -19,6 +23,7 @@ class ListForm extends React.Component {
   }
 
   render() {
+    console.log(this.state.input);
     return (
       <form onSubmit={this.handleSubmit}>
         <input onChange={this.handleChanges} type="text" name="item" />
