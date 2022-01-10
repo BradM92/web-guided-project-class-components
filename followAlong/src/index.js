@@ -53,13 +53,11 @@ class App extends React.Component {
     //3. Retain our previous state.
     //4. change groceries: remove all items where purchased == true
 
-    const newGroceries = this.state.groceries.filter(item => {
-        return item.purchased === false;
-    });
-
     this.setState({
       ...this.state,
-      groceries: newGroceries
+      groceries: this.state.groceries.filter(item => {
+        return !item.purchased;
+      })
     });
   }
 
