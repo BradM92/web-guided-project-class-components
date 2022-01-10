@@ -47,6 +47,9 @@ class App extends React.Component {
   }
 
   //Toggle Clear Purchased
+  handleClearPurchased = ()=> {
+    console.log("Do the thing I want you to do.");
+  }
 
   //Add Item
 
@@ -61,7 +64,7 @@ class App extends React.Component {
            <ListForm />
          </div>
         <GroceryList groceries={this.state.groceries} />
-        <button className="clear-btn">Clear Purchased</button>
+        <button onClick={handleClearPurchased}className="clear-btn">Clear Purchased</button>
        </div>
     );
   }
