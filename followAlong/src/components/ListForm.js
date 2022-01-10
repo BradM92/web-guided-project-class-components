@@ -10,10 +10,7 @@ class ListForm extends React.Component {
   // class property to submit form
   handleSubmit = e => {
     e.preventDefault();
-    //1. Capture our click
-    //2. change our state
-    //3. retain previous state
-    //4. add to groceries an new groceries
+    console.log(this.props);
 
   }
 
