@@ -81,6 +81,9 @@ class App extends React.Component {
   }
 
   //Toggle Purchased
+  handleToggleItem = () => {
+
+  }
 
   // Class methods to update state
   render() {
