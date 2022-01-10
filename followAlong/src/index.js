@@ -90,7 +90,11 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries: this.state.groceries.map(item => {
-        return(item);
+        return({
+          name:"gotcha!!",
+          id:2,
+          purchased:false
+        });
       })
     });
 
