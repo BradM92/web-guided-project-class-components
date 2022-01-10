@@ -81,8 +81,8 @@ class App extends React.Component {
   }
 
   //Toggle Purchased
-  handleToggleItem = () => {
-    console.log("clicking in index");
+  handleToggleItem = (item) => {
+    console.log("clicking in index ", item.name);
   }
 
   // Class methods to update state
