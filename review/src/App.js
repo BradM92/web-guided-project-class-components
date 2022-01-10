@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hello {name}</h1>
+      <h1>Hello {state.name}</h1>
       <p>You are {state.age} years old.</p>
     </div>
   );
