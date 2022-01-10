@@ -70,12 +70,13 @@ class App extends React.Component {
 
     const newItem = {
       name:"Chips",
-      id: Date.now()
+      id: Date.now(),
+      purchased: false
     };
 
     this.setState({
       ...this.state,
-      groceries: [...this.state.groceries, ]
+      groceries: [...this.state.groceries, nextItem]
     });
   }
 
