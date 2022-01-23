@@ -67,14 +67,24 @@ class App extends React.Component {
   }
 
   //add item
-
+  handleAddItem = () => {
+    const newItem = {
+      name: "chips",
+      id: Date.now,
+      purchased: false,
+    }
+    this.state({
+      ...this.state,
+      groceries: [...this.state.groceries, newItem],
+    })
+  }
   //class methods to update
   render() {
     return (
       <div className="App">
         <div className="header">
            <h1>Shopping List</h1>
-           <ListForm />
+           <ListForm  handleAddItem = {this.handleAddItem}/>
          </div>
         <GroceryList groceries={this.state.groceries} />
         <button onClick={this.handleClearPurchased} className="clear-btn">Clear Purchased</button> 
