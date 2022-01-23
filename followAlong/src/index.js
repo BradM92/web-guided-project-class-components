@@ -46,6 +46,29 @@ class App extends React.Component {
       groceries: groceries,
     }
   }
+  //toggle clear purchased
+  handleClearPurchased = () => {
+    //capture click step 1
+
+    //change state step 2
+
+    //retain previous state step 3
+
+    //change groceries removed all items pruchaed == true step 4
+    const newGroceries = this.state.groceries.filter(item => {
+      return item.purchased === false;
+    }) 
+    this.setState({
+      ...this.state,
+      groceries: newGroceries
+    })
+
+
+  }
+
+  //add item
+
+  //class methods to update
   render() {
     return (
       <div className="App">
@@ -54,7 +77,7 @@ class App extends React.Component {
            <ListForm />
          </div>
         <GroceryList groceries={this.state.groceries} />
-        <button className="clear-btn">Clear Purchased</button>
+        <button onClick={this.handleClearPurchased} className="clear-btn">Clear Purchased</button> 
        </div>
     );
   }
