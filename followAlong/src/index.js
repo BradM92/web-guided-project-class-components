@@ -40,6 +40,12 @@ const groceries = [
 
 class App extends React.Component {
   // Class methods to update state
+  constructor(){
+    super();
+    this.state = {
+      groceries: groceries,
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -47,7 +53,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm />
          </div>
-        <GroceryList groceries={groceries} />
+        <GroceryList groceries={this.state.groceries} />
         <button className="clear-btn">Clear Purchased</button>
        </div>
     );

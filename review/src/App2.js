@@ -8,18 +8,19 @@ class App2 extends React.Component{
             age: 30,
         }
     }
+    handleClick = () => {
+        this.setState({
+            ...this.state,
+            name: "Rose"
+        })
+    }
     render() {
         const name = "Cynthia";
         const age = "31";
         return(
             <div><p>Hello {this.state.name}</p>
             <p>Your age is {this.state.age}</p>
-            <button onClick = {() => {
-                this.state({
-                    ...this.state,
-                    name: "Rose",
-                })
-            }}>change name to Rose</button>
+            <button onClick = {this.handleClick}>change name to Rose</button>
             </div>
         )
     }
